@@ -1,6 +1,8 @@
 <template>
   <div>
+    <!-- 公共头部 -->
     <Nuxt />
+    <!-- 公共底部 -->
   </div>
 </template>
 
