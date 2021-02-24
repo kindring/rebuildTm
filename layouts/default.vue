@@ -3,8 +3,19 @@
     <!-- 公共头部 -->
     <Nuxt />
     <!-- 公共底部 -->
+    <bg-music></bg-music>
   </div>
 </template>
+
+<script>
+import bgMusic from '../components/bgMusic.vue'
+export default {
+  components: { bgMusic },
+  mounted(){
+  }
+}
+</script>
+
 
 <style>
 html {

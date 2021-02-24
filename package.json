@@ -11,9 +11,11 @@
   "dependencies": {
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "postcss-px2rem": "^0.3.0"
+    "postcss-px2rem": "^0.3.0",
+    "svg-sprite-loader": "^5.2.1"
   },
   "devDependencies": {
+    "@nuxtjs/svg": "^0.1.12",
     "@nuxtjs/tailwindcss": "^3.4.2"
   }
 }
