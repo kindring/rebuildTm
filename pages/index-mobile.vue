@@ -1,7 +1,10 @@
 <template>
   <div class="container bg-red-700">
+    <div class="pull-loading">
+      <!-- 下拉刷新动画组件 -->
+    </div>
     <div class="content w-screen">
-
+      
     </div>
     <div class="floor">
       <floor></floor>
@@ -12,7 +15,16 @@
 <script>
 import floor from '../components/floor.vue'
 export default {
-  components: { floor },}
+  components: { floor },
+  data(){
+    return {
+      header:{
+        show: true
+      },
+      loading:false
+    }
+  }  
+}
 </script>
 
 
