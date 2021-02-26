@@ -8,14 +8,14 @@
           'page-item':true,
           'cursor-pointer':true,
           'page-item-now':pageItem.now==item.page,
-          [item.selected.class||item.class]:true
+          [(item.page == pageItem.now ?item.selected.class||item.class:item.class)||'']:true
         }"
         
       >
         <img 
           :src="item.page == pageItem.now?`svg/${item.icon}-selected.svg`:`svg/${item.icon}.svg`" 
           :alt="item.text"
-          class='mt-2 mb-1 cursor-pointer'
+          class='block mt-2 h-2/5 sm:h-2/5 md:h-1/2 lg:h-4/6 mb-1 cursor-pointer'
           @click="pageItemClickHandel(item)"
         >
         <span
@@ -103,12 +103,6 @@ export default {
   align-items: center;
   flex-direction: column;
 
-}
-.page-item img{
-  display: block;
-  height:40%;
-  width: 100%;
-  overflow: hidden;
 }
 .page-item-now{
   color: orangered;

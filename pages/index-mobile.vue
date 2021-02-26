@@ -1,12 +1,9 @@
 <template>
   <div class="container bg-red-700">
-    <div class="pull-loading">
-      <!-- 下拉刷新动画组件 -->
-    </div>
     <div class="content w-screen">
-      
+      <search class="w-full h-8 bg-white"></search>
     </div>
-    <div class="floor">
+    <div class="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-32  relative overflow-hidden floor">
       <floor></floor>
     </div>
   </div>
@@ -14,8 +11,9 @@
 
 <script>
 import floor from '../components/floor.vue'
+import Search from '../components/home/search.vue'
 export default {
-  components: { floor },
+  components: { floor, Search },
   data(){
     return {
       header:{
@@ -46,11 +44,10 @@ export default {
 }
 .content{
   width: 100%;
-  height: calc(100vh - 3.7rem);
+  flex: auto;
 }
 .floor{
   width: 100%;
-  height: 3.7rem;
 }
 .title {
   font-family:

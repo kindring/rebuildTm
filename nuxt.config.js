@@ -1,5 +1,5 @@
 const path = require('path');
-
+let tailwindcss = require('./tailwind.config')
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
@@ -25,7 +25,10 @@ export default {
     css: [
         'assets/main.css'
     ],
-
+    tailwindcss: {
+        configPath: 'tailwind.config.js',
+        exposeConfig: true
+    },
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [],
 
